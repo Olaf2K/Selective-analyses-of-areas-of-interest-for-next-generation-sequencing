@@ -140,7 +140,7 @@ while IFS= read -r lines; do
 		#50 This will only export reads that are different from the reference within the guide locations. If a missmatch !only! occurs outside the guide areas, then this read is ignored. 
 		python3 if_in_guide_area.py
 		wait
-		python3 iff_in_guide_area_just_different.py
+		#python3 iff_in_guide_area_just_different.py
 		wait
 		#The following lines differentiate whichh type of difference compared to the reference is found (eg. an insertion, deletion or base pair change).
 		python3 compare_no_dashes_to_ref.py
